@@ -122,6 +122,7 @@ export const mergeContacts = async (
       email_jsonb: mergedEmails,
       phone_jsonb: mergedPhones,
       linkedin_url: winnerContact.linkedin_url || loserContact.linkedin_url,
+      instagram_url: winnerContact.instagram_url || loserContact.instagram_url,
       background: winnerContact.background ?? loserContact.background,
       has_newsletter:
         winnerContact.has_newsletter ?? loserContact.has_newsletter,

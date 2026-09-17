@@ -8,6 +8,7 @@ import { Separator } from "@/components/ui/separator";
 import { useIsMobile } from "@/hooks/use-mobile";
 
 import ImageEditorField from "../misc/ImageEditorField";
+import { isInstagramUrl } from "../misc/isInstagramUrl";
 import { isLinkedinUrl } from "../misc/isLinkedInUrl";
 import { useConfigurationContext } from "../root/ConfigurationContext";
 import type { Company, Sale } from "../types";
@@ -88,6 +89,11 @@ const CompanyContactInputs = () => {
         source="linkedin_url"
         helperText={false}
         validate={isLinkedinUrl}
+      />
+      <TextInput
+        source="instagram_url"
+        helperText={false}
+        validate={isInstagramUrl}
       />
       <TextInput source="phone_number" helperText={false} />
     </div>

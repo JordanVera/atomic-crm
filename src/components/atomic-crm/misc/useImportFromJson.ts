@@ -261,6 +261,7 @@ export const useImportFromJson = (): [
               ? mapSizeToCategory(dataToImport.size)
               : undefined,
             linkedin_url: dataToImport.linkedin_url?.trim(),
+            instagram_url: dataToImport.instagram_url?.trim(),
             website: dataToImport.website?.trim(),
             phone_number: dataToImport.phone_number?.trim(),
             revenue: dataToImport.revenue?.trim(),
@@ -370,6 +371,7 @@ export const useImportFromJson = (): [
             title: dataToImport.title?.trim(),
             background: dataToImport.background?.trim(),
             linkedin_url: dataToImport.linkedin_url?.trim(),
+            instagram_url: dataToImport.instagram_url?.trim(),
             gender: gender || undefined,
             has_newsletter: !!dataToImport.has_newsletter,
             company_id: dataToImport.company_id
@@ -725,6 +727,7 @@ type CompanyImport = {
   sector?: string;
   size?: number;
   linkedin_url?: string;
+  instagram_url?: string;
   website?: string;
   phone_number?: string;
   revenue?: string;
@@ -750,6 +753,7 @@ type ContactImport = {
   title?: string;
   background?: string;
   linkedin_url?: string;
+  instagram_url?: string;
   avatar?: string;
   gender?: string;
   has_newsletter?: boolean;

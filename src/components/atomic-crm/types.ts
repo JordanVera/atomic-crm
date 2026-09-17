@@ -57,6 +57,7 @@ export type Company = {
   sector: string;
   size: 1 | 10 | 50 | 250 | 500;
   linkedin_url: string;
+  instagram_url: string;
   website: string;
   phone_number: string;
   address: string;
@@ -92,6 +93,7 @@ export type Contact = {
   email_jsonb: EmailAndType[];
   avatar?: Partial<RAFile>;
   linkedin_url?: string | null;
+  instagram_url?: string | null;
   first_seen: string;
   last_seen: string;
   has_newsletter: boolean;

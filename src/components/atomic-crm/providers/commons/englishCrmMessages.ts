@@ -7,6 +7,7 @@ export const englishCrmMessages = {
         name: "Company name",
         website: "Website",
         linkedin_url: "LinkedIn URL",
+        instagram_url: "Instagram URL",
         phone_number: "Phone number",
         created_at: "Created at",
         nb_contacts: "Number of contacts",
@@ -82,6 +83,7 @@ export const englishCrmMessages = {
         phone_jsonb: "Phone numbers",
         phone_number: "Phone number",
         linkedin_url: "LinkedIn URL",
+        instagram_url: "Instagram URL",
         background: "Background info (bio, how you met, etc)",
         has_newsletter: "Has newsletter",
         sales_id: "Account manager",
@@ -573,6 +575,7 @@ export const englishCrmMessages = {
     validation: {
       invalid_url: "Must be a valid URL",
       invalid_linkedin_url: "URL must be from linkedin.com",
+      invalid_instagram_url: "URL must be from instagram.com",
     },
   },
 } as const;

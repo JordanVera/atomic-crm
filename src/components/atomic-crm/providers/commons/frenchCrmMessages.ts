@@ -9,6 +9,7 @@ export const frenchCrmMessages = {
         name: "Nom de l'entreprise",
         website: "Site web",
         linkedin_url: "LinkedIn",
+        instagram_url: "Instagram",
         phone_number: "Numéro de téléphone",
         created_at: "Date de création",
         nb_contacts: "Nombre de contacts",
@@ -85,6 +86,7 @@ export const frenchCrmMessages = {
         phone_jsonb: "Numéros de téléphone",
         phone_number: "Numéro de téléphone",
         linkedin_url: "URL LinkedIn",
+        instagram_url: "URL Instagram",
         background: "Informations de contexte",
         has_newsletter: "Abonné à la newsletter",
         sales_id: "Responsable de compte",
@@ -581,6 +583,7 @@ export const frenchCrmMessages = {
     validation: {
       invalid_url: "Doit être une URL valide",
       invalid_linkedin_url: "L'URL doit provenir de linkedin.com",
+      invalid_instagram_url: "L'URL doit provenir de instagram.com",
     },
   },
 } satisfies CrmMessages;

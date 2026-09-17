@@ -1,4 +1,4 @@
-import { Globe, Linkedin, Phone } from "lucide-react";
+import { Globe, Linkedin, Instagram, Phone } from "lucide-react";
 import {
   useGetIdentity,
   useLocaleState,
@@ -61,7 +61,12 @@ export const CompanyAside = ({ link = "edit" }: CompanyAsideProps) => {
 
 export const CompanyInfo = ({ record }: { record: Company }) => {
   const translate = useTranslate();
-  if (!record.website && !record.linkedin_url && !record.phone_number) {
+  if (
+    !record.website &&
+    !record.linkedin_url &&
+    !record.instagram_url &&
+    !record.phone_number
+  ) {
     return null;
   }
 
@@ -93,6 +98,20 @@ export const CompanyInfo = ({ record }: { record: Company }) => {
             title={record.linkedin_url}
           >
             LinkedIn
+          </a>
+        </div>
+      )}
+      {record.instagram_url && (
+        <div className="flex flex-row items-center gap-1 min-h-[24px]">
+          <Instagram className="w-4 h-4" />
+          <a
+            className="underline hover:no-underline"
+            href={record.instagram_url}
+            target="_blank"
+            rel="noopener noreferrer"
+            title={record.instagram_url}
+          >
+            Instagram
           </a>
         </div>
       )}

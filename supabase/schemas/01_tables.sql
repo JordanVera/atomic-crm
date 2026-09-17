@@ -17,6 +17,7 @@ create table public.companies (
     sector text,
     size smallint,
     linkedin_url text,
+    instagram_url text,
     website extensions.citext,
     phone_number text,
     address text,
@@ -48,6 +49,7 @@ create table public.contacts (
     company_id bigint,
     sales_id bigint,
     linkedin_url text,
+    instagram_url text,
     email_jsonb jsonb,
     phone_jsonb jsonb
 );

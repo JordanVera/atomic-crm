@@ -26,6 +26,7 @@ export function useCompanyImport(): ProcessImportBatch {
               sector: toConfiguredValue(row.sector, companySectors),
               size: sizeOf(row.size),
               linkedin_url: toText(row.linkedin_url),
+              instagram_url: toText(row.instagram_url),
               website: toText(row.website),
               phone_number: toText(row.phone_number),
               address: toText(row.address),

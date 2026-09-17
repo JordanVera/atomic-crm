@@ -4,7 +4,7 @@ import { ArrayField } from "@/components/admin/array-field";
 import { SingleFieldList } from "@/components/admin/single-field-list";
 import { TextField } from "@/components/admin/text-field";
 import { EmailField } from "@/components/admin/email-field";
-import { Mail, Phone, Linkedin, Check } from "lucide-react";
+import { Mail, Phone, Linkedin, Instagram, Check } from "lucide-react";
 import type { ReactNode } from "react";
 import {
   contactGender,
@@ -45,6 +45,22 @@ export const ContactPersonalInfo = () => {
               title={record.linkedin_url}
             >
               LinkedIn
+            </a>
+          }
+        />
+      )}
+      {record.instagram_url && (
+        <PersonalInfoRow
+          icon={<Instagram className="w-4 h-4 text-muted-foreground" />}
+          primary={
+            <a
+              className="underline hover:no-underline text-sm text-muted-foreground"
+              href={record.instagram_url}
+              target="_blank"
+              rel="noopener noreferrer"
+              title={record.instagram_url}
+            >
+              Instagram
             </a>
           }
         />
