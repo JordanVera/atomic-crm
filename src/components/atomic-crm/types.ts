@@ -59,6 +59,7 @@ export type Company = {
   linkedin_url: string;
   instagram_url: string;
   website: string;
+  concept_website: string;
   phone_number: string;
   address: string;
   zipcode: string;

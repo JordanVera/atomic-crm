@@ -1,4 +1,4 @@
-import { Globe, Linkedin, Instagram, Phone } from "lucide-react";
+import { Globe, Link2, Linkedin, Instagram, Phone } from "lucide-react";
 import {
   useGetIdentity,
   useLocaleState,
@@ -63,6 +63,7 @@ export const CompanyInfo = ({ record }: { record: Company }) => {
   const translate = useTranslate();
   if (
     !record.website &&
+    !record.concept_website &&
     !record.linkedin_url &&
     !record.instagram_url &&
     !record.phone_number
@@ -85,6 +86,20 @@ export const CompanyInfo = ({ record }: { record: Company }) => {
               .replace("http://", "")
               .replace("https://", "")}
           />
+        </div>
+      )}
+      {record.concept_website && (
+        <div className="flex flex-row items-center gap-1 min-h-[24px]">
+          <Link2 className="w-4 h-4" />
+          <a
+            className="underline hover:no-underline"
+            href={record.concept_website}
+            target="_blank"
+            rel="noopener noreferrer"
+            title={record.concept_website}
+          >
+            {translate("resources.companies.fields.concept_website")}
+          </a>
         </div>
       )}
       {record.linkedin_url && (

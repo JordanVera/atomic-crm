@@ -81,6 +81,7 @@ select
     c.linkedin_url,
     c.instagram_url,
     c.website,
+    c.concept_website,
     c.phone_number,
     c.address,
     c.zipcode,

@@ -347,6 +347,7 @@ const lifeCycleCallbacks: ResourceCallbacks[] = [
         "name",
         "phone_number",
         "website",
+        "concept_website",
         "zipcode",
         "city",
         "state_abbr",

@@ -19,6 +19,7 @@ create table public.companies (
     linkedin_url text,
     instagram_url text,
     website extensions.citext,
+    concept_website extensions.citext,
     phone_number text,
     address text,
     zipcode text,

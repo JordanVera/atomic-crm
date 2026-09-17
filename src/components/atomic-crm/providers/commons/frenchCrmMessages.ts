@@ -8,6 +8,7 @@ export const frenchCrmMessages = {
       fields: {
         name: "Nom de l'entreprise",
         website: "Site web",
+        concept_website: "Site concept",
         linkedin_url: "LinkedIn",
         instagram_url: "Instagram",
         phone_number: "Numéro de téléphone",

@@ -81,6 +81,7 @@ export const buildCompany = (overrides: Partial<Company> = {}): Company => ({
   state_abbr: "CA",
   tax_identifier: "",
   website: "",
+  concept_website: "",
   zipcode: "95014",
   ...overrides,
 });

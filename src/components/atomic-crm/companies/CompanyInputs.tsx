@@ -85,6 +85,7 @@ const CompanyContactInputs = () => {
         })}
       </h6>
       <TextInput source="website" helperText={false} validate={isUrl} />
+      <TextInput source="concept_website" helperText={false} validate={isUrl} />
       <TextInput
         source="linkedin_url"
         helperText={false}

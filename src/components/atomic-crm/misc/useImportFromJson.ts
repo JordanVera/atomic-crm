@@ -263,6 +263,7 @@ export const useImportFromJson = (): [
             linkedin_url: dataToImport.linkedin_url?.trim(),
             instagram_url: dataToImport.instagram_url?.trim(),
             website: dataToImport.website?.trim(),
+            concept_website: dataToImport.concept_website?.trim(),
             phone_number: dataToImport.phone_number?.trim(),
             revenue: dataToImport.revenue?.trim(),
             tax_identifier: dataToImport.tax_identifier?.trim(),
@@ -729,6 +730,7 @@ type CompanyImport = {
   linkedin_url?: string;
   instagram_url?: string;
   website?: string;
+  concept_website?: string;
   phone_number?: string;
   revenue?: string;
   tax_identifier?: string;

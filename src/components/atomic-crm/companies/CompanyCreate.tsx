@@ -16,6 +16,12 @@ export const CompanyCreate = () => {
         if (values.website && !values.website.startsWith("http")) {
           values.website = `https://${values.website}`;
         }
+        if (
+          values.concept_website &&
+          !values.concept_website.startsWith("http")
+        ) {
+          values.concept_website = `https://${values.concept_website}`;
+        }
         return values;
       }}
     >

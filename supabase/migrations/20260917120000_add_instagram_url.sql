@@ -1,7 +1,9 @@
-ALTER TABLE public.companies ADD COLUMN instagram_url text;
-ALTER TABLE public.contacts ADD COLUMN instagram_url text;
+ALTER TABLE public.companies ADD COLUMN IF NOT EXISTS instagram_url text;
+ALTER TABLE public.contacts ADD COLUMN IF NOT EXISTS instagram_url text;
 
-CREATE OR REPLACE VIEW public.companies_summary WITH (security_invoker = on) AS
+DROP VIEW IF EXISTS public.companies_summary;
+
+CREATE VIEW public.companies_summary WITH (security_invoker = on) AS
 SELECT
     c.id,
     c.created_at,
@@ -30,7 +32,9 @@ FROM public.companies c
     LEFT JOIN public.contacts co ON c.id = co.company_id
 GROUP BY c.id;
 
-CREATE OR REPLACE VIEW public.contacts_summary WITH (security_invoker = on) AS
+DROP VIEW IF EXISTS public.contacts_summary;
+
+CREATE VIEW public.contacts_summary WITH (security_invoker = on) AS
 SELECT
     co.id,
     co.first_name,
