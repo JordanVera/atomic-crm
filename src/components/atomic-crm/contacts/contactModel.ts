@@ -155,6 +155,10 @@ export function exportToVCard(
     lines.push(`URL:${contact.linkedin_url}`);
   }
 
+  if (contact.instagram_url) {
+    lines.push(`URL:${contact.instagram_url}`);
+  }
+
   // Background/Note
   if (contact.background) {
     // Escape newlines and special characters in notes

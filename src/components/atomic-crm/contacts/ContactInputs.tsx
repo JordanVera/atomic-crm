@@ -18,6 +18,7 @@ import { SelectInput } from "@/components/admin/select-input";
 import { ArrayInput } from "@/components/admin/array-input";
 import { SimpleFormIterator } from "@/components/admin/simple-form-iterator";
 
+import { isInstagramUrl } from "../misc/isInstagramUrl";
 import { isLinkedinUrl } from "../misc/isLinkedInUrl";
 import { StatusSelector } from "../notes";
 import type { Sale, Contact } from "../types";
@@ -199,6 +200,11 @@ const ContactPersonalInformationInputs = () => {
         source="linkedin_url"
         helperText={false}
         validate={isLinkedinUrl}
+      />
+      <TextInput
+        source="instagram_url"
+        helperText={false}
+        validate={isInstagramUrl}
       />
     </div>
   );
