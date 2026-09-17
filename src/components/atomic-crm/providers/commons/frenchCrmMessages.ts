@@ -11,6 +11,7 @@ export const frenchCrmMessages = {
         concept_website: "Site concept",
         linkedin_url: "LinkedIn",
         instagram_url: "Instagram",
+        email: "E-mail",
         phone_number: "Numéro de téléphone",
         created_at: "Date de création",
         nb_contacts: "Nombre de contacts",

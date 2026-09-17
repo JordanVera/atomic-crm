@@ -22,6 +22,9 @@ export const CompanyCreate = () => {
         ) {
           values.concept_website = `https://${values.concept_website}`;
         }
+        if (values.email) {
+          values.email = values.email.toLowerCase();
+        }
         return values;
       }}
     >

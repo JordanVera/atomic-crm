@@ -61,6 +61,7 @@ export type Company = {
   website: string;
   concept_website: string;
   phone_number: string;
+  email: string;
   address: string;
   zipcode: string;
   city: string;

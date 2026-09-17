@@ -1,4 +1,4 @@
-import { required, useRecordContext, useTranslate } from "ra-core";
+import { email, required, useRecordContext, useTranslate } from "ra-core";
 import { ReferenceInput } from "@/components/admin/reference-input";
 import { TextInput } from "@/components/admin/text-input";
 import { SelectInput } from "@/components/admin/select-input";
@@ -96,6 +96,7 @@ const CompanyContactInputs = () => {
         helperText={false}
         validate={isInstagramUrl}
       />
+      <TextInput source="email" helperText={false} validate={email()} />
       <TextInput source="phone_number" helperText={false} />
     </div>
   );

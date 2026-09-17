@@ -73,6 +73,7 @@ export const buildCompany = (overrides: Partial<Company> = {}): Company => ({
   instagram_url: "",
   logo: { src: "", title: "logo" } as Company["logo"],
   name: "Acme",
+  email: "",
   phone_number: "",
   revenue: "",
   sales_id: 0,

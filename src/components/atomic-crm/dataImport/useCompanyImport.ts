@@ -29,6 +29,7 @@ export function useCompanyImport(): ProcessImportBatch {
               instagram_url: toText(row.instagram_url),
               website: toText(row.website),
               concept_website: toText(row.concept_website),
+              email: toText(row.email),
               phone_number: toText(row.phone_number),
               address: toText(row.address),
               zipcode: toText(row.zipcode),

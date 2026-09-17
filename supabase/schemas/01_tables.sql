@@ -21,6 +21,7 @@ create table public.companies (
     website extensions.citext,
     concept_website extensions.citext,
     phone_number text,
+    email extensions.citext,
     address text,
     zipcode text,
     city text,

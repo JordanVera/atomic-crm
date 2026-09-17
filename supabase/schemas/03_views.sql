@@ -83,6 +83,7 @@ select
     c.website,
     c.concept_website,
     c.phone_number,
+    c.email,
     c.address,
     c.zipcode,
     c.city,

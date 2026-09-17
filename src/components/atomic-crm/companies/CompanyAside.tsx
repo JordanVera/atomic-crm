@@ -1,4 +1,4 @@
-import { Globe, Link2, Linkedin, Instagram, Phone } from "lucide-react";
+import { Globe, Link2, Linkedin, Instagram, Mail, Phone } from "lucide-react";
 import {
   useGetIdentity,
   useLocaleState,
@@ -66,6 +66,7 @@ export const CompanyInfo = ({ record }: { record: Company }) => {
     !record.concept_website &&
     !record.linkedin_url &&
     !record.instagram_url &&
+    !record.email &&
     !record.phone_number
   ) {
     return null;
@@ -127,6 +128,18 @@ export const CompanyInfo = ({ record }: { record: Company }) => {
             title={record.instagram_url}
           >
             Instagram
+          </a>
+        </div>
+      )}
+      {record.email && (
+        <div className="flex flex-row items-center gap-1 min-h-[24px]">
+          <Mail className="w-4 h-4" />
+          <a
+            className="underline hover:no-underline"
+            href={`mailto:${record.email}`}
+            title={record.email}
+          >
+            {record.email}
           </a>
         </div>
       )}
